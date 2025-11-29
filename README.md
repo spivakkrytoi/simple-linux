@@ -1,81 +1,73 @@
-<img src="" alt="" width="auto" height="auto"><h1 align="center">Simple Linux</h1>
-<p align="center"><a href="#project-description">Project Description</a> - <a href="#key-features">Key Features</a> - <a href="#technology-stack">Tech Stack</a></p>
 
-<img src="https://repolaunch.vercel.app/assets/img/yt.webp" alt="" align="middle" width="auto" height="auto">
+<br/>
+<div align="center">
+<a href="https://github.com/ShaanCoding/ReadME-Generator">
+<img src="https://i.postimg.cc/MTmZYKfY/simple-linux-logo.png" alt="Logo" width="80" height="80">
+</a>
+<h3 align="center">Simple Linux</h3>
+<p align="center">
+Just simple it!
 
-## Project Description
-
-This project was created as a helper script for Linux. There is no main functionality yet, but there are some patches. Please star this repository.
-
-## Key Components
-
-UserForm
-
-```javascript
-const UserForm = () => {
-  const [name, setName] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert(`Hello, ${name}`);
-  };
-
-  return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        placeholder="Enter your name"
-      />
-      <button type="submit">Submit</button>
-    </form>
-  );
-};
-
-export default UserForm;
-
-```
 
   
-ToggleMessage
 
-```javascript
-const ToggleMessage = () => {
-  const [isVisible, setIsVisible] = useState(false);
 
-  return (
-    
-<div>
-      <button onClick={() => setIsVisible(!isVisible)}>
-        {isVisible ? 'Hide' : 'Show'} Message
-      </button>
-      {isVisible && 
-<p>This is a toggled message!</p>
-}
-    </div>
+</p>
+</div>
 
-  );
-};
+## About The Project
 
-export default ToggleMessage;
+![Product Screenshot](https://i.postimg.cc/FKJ704ZQ/Znimok-ekrana-z-2025-11-29-18-38-20.png)
 
-```
+Linux Assistant is a personal helper for Linux users that automates routine tasks and makes daily workflows much easier.
 
-## Key Features
+Automates repetitive processes, saving you time and effort.
 
-This project replicates the core functionalities of YouTube, including:
+Includes configuration files for automatic setup of your development environment — set it once and start working immediately.
 
-*   **Video Streaming**: Users can upload and stream high-definition videos.
-*   **User Authentication**: Secure sign-up/login using OAuth2.0.
-*   **Video Recommendations**: A recommendation system that suggests relevant content based on user preferences.
-*   **Cloud Integration**: Uploaded videos are stored in the cloud, with seamless playback across devices.
+Fully customizable and easy to extend according to your needs.
 
-This project showcases a comprehensive technology stack involving full-stack web development and cloud services.
+If you find this project useful, please give it a star ⭐ and share it with a friend who loves Linux — help spread the word!
+### Built With
 
-## Tech Stack
+This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-**Frontend**: React, Tailwind CSS, Redux  
-**Backend**: Node.js, Express, MongoDB  
-**Cloud & DevOps**: AWS (S3, CloudFront), Docker  
-**Other**: OAuth2.0, WebSockets
+- [JSON](https://www.json.org)
+- [Python](https://www.python.org/)
+## Getting Started
+
+Follow these steps to quickly set up and start using Simple Linux:
+### Prerequisites
+
+You need to install some library:
+
+- library
+  ```sh
+  pip install -r requirements.txt
+  ```
+### Installation
+
+_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/spivakkrytoi/simple-linux.git
+   cd simple-linux
+
+   ```
+2. Run the programm!
+   ```sh
+   python main.py
+   ```
+3. Or
+   ```sh
+   python3 main.py
+   ```
+## Roadmap
+
+- [ ] Add working configurations
+- [ ] Add more functional
+- [ ] Make the program "Speak"
+- [ ] Multi-language Support
+  - [ ] Ukrainian
+  - [ ] Spanish
