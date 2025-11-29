@@ -1,0 +1,4 @@
+colorama==0.4.6
+art==6.5
+rich==14.2.0
+rainbowtext==1.0.3
