@@ -96,13 +96,32 @@ while True:
         calculator()
     elif choose == 3:
         os.system("clear")
-        print("Coming soon...")
+        cfgChoose = '''
+        What you need?
+        1. Create config
+        2. Load config
+        3. Return to menu
+        '''
+        print(cfgChoose)
+        cfginput = int(input(": "))
+        if cfginput == 1:
+            os.system("clear")
+            appquanty = int(input("How many programs you need to add to your config?"))
+            config.createcfg(appquanty)
+        elif cfginput == 2:
+                    config.menu()
+                    cfgToLoad = input("What config you need to load? (just name after /Configs/): ")
+                    config.loadcfg(cfgToLoad)
+        elif cfginput == 3:
+                os.system("clear")
+        else:
+            print("Incorrect! Try again")
+
+
     elif choose == 99:
         os.system("clear")
         print("Goodbye!")
         sys.exit(0)
     else:
         print("Incorrect number!")
-
-    input("\nPress Enter to return to menu...")
     os.system("clear")
