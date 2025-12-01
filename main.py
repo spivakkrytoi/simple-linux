@@ -11,6 +11,7 @@ from datetime import datetime
 #mine "libs" :)
 from libs import calc
 from libs import config
+from libs import settings
 from libs.welcome import print_ascii_slow
 
 month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
@@ -26,7 +27,7 @@ with Progress() as progress:
 
 os.system("clear")
 
-print_ascii_slow("Welcome     back!", delay=0.005)
+print_ascii_slow("Welcome   to   SL!", delay=0.005)
 while True:
     options = rainbowtext.text("""
     _____________________________
@@ -37,7 +38,7 @@ while True:
     -----------------------------
     """)
     month_now = int(datetime.now().strftime("%m")) - 1
-    now = datetime.now().strftime("%d") + " " +  month[month_now] + " " + datetime.now().strftime("%H:%M")
+    now = "~Time:" + datetime.now().strftime("%d") + " " +  month[month_now] + " " + datetime.now().strftime("%H:%M" + "~")
     print("    " + Fore.RED + now)
     print(options)
 
